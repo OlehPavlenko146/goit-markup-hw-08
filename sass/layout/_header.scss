@@ -1,0 +1,124 @@
+.nav-contact {
+  display: flex;
+}
+
+.nav {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+
+.site-nav {
+  display: none;
+  @include tablet {
+    display: flex;
+    margin-left: 93px;
+    .site-nav__link {
+      display: block;
+      padding: 32px 0;
+    }
+    .site-nav__link.current {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.site-nav__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav__link {
+  display: block;
+  @include font(500, null, 1.14, 0.02em);
+  color: var(--secondary-text-color);
+
+  transition-property: color;
+  @include transition-list;
+  .site-nav &:hover,
+  .site-nav &:focus {
+    color: var(--accent-color);
+  }
+  &.current::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+.contacts-wrap {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.contacts {
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: auto;
+    .contacts__link {
+      // padding: 32px 0;
+      text-decoration: none;
+      @include font(500, null, 1.17, 0.02em);
+      color: var(--primary-text-color);
+    }
+  }
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0;
+  }
+}
+
+@include desktop {
+  .contacts__item + .contacts__item {
+    margin-left: 50px;
+  }
+}
+
+.contacts__link {
+  @include tablet {
+    @include align-list;
+    text-decoration: none;
+    line-height: 1.71;
+    color: var(--footer-link-color);
+    transition-property: color;
+    @include transition-list;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.icon-smartphone,
+.icon-envelope {
+  margin-right: 10px;
+  transition-property: color;
+  @include transition-list;
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+@include tablet {
+  .mob-menu-wrap,
+  .icon-menu,
+  .menu-btn {
+    display: none;
+  }
+}

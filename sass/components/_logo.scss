@@ -1,0 +1,22 @@
+.logo {
+  display: block;
+  width: 145px;
+}
+
+.logo__web {
+  font-family: Raleway, sans-serif;
+  @include font(700, 26px, 1.19, null);
+  color: var(--accent-color);
+}
+.logo__studio {
+  font-family: var(--secondary-font-family);
+  @include font(700, 26px, 1.19, null);
+}
+
+.logo__studio--light {
+  color: var(--primary-background-color);
+}
+
+.logo__studio--dark {
+  color: var(--logo-studio-color);
+}

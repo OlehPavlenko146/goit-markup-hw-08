@@ -1,0 +1,14 @@
+body {
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  letter-spacing: var(--primary-letter-spacing);
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
