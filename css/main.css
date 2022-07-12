@@ -186,6 +186,12 @@ img {
 
 .nav-contact {
   display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .nav-contact {
+    min-height: 60px;
+  }
 }
 
 .nav {
@@ -320,12 +326,10 @@ img {
   }
 }
 .menu-btn {
-  position: absolute;
-  top: 0;
-  right: 15px;
+  margin-left: auto;
   width: 40px;
   height: 40px;
-  padding: 0;
+  padding: 12px 8px;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
@@ -476,18 +480,13 @@ img {
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -8px;
-  margin-bottom: -15px;
+  row-gap: 15px;
+  column-gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .buttons {
     justify-content: center;
   }
-}
-
-.button-item {
-  margin-right: 8px;
-  margin-bottom: 15px;
 }
 
 .button {
@@ -522,7 +521,7 @@ img {
 
 .section__title {
   text-align: center;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 30px 0px;
   color: var(--secondary-text-color);
   font-size: 28px;
   line-height: 1.17;
@@ -531,6 +530,11 @@ img {
   .section__title {
     font-size: 36px;
     line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin: 0px 0px 50px 0px;
   }
 }
 
@@ -1103,6 +1107,7 @@ img {
 .projects__item-description {
   font-size: 16px;
   line-height: 1.88;
+  color: var(--primary-text-color);
 }
 
 .projects__item-link {
