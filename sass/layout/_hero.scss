@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/imges/hero-bg-mob-min.jpg);
+    url(../imges/hero-bg-mob-min.jpg);
   background-size: cover;
   background-position: center;
   background-color: var(--primary-text-color);
@@ -18,7 +18,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/imges/hero-bg-mob-2x-min.jpg);
+      url(../imges/hero-bg-mob-2x-min.jpg);
   }
 
   @include tablet {
@@ -28,13 +28,13 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/imges/hero-bg-tablet-min.jpg);
+      url(../imges/hero-bg-tablet-min.jpg);
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/imges/hero-bg-tab-2x-min.jpg);
+        url(../imges/hero-bg-tab-2x-min.jpg);
     }
   }
 
@@ -45,13 +45,13 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/imges/hero-bg.jpg);
+      url(../imges/hero-bg.jpg);
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/imges/hero-bg-desk-2x-min.jpg);
+        url(../imges/hero-bg-desk-2x-min.jpg);
     }
   }
 }
