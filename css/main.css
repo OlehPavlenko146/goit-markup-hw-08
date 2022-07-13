@@ -474,7 +474,17 @@ img {
 }
 
 .buttons-wrap {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .buttons-wrap {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons-wrap {
+    margin-bottom: 50px;
+  }
 }
 
 .buttons {
@@ -645,6 +655,11 @@ img {
 .advantages__item {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    width: 354px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .advantages__item {
     width: 270px;
@@ -667,7 +682,7 @@ img {
   line-height: 1.71;
   height: 50px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .advantages__description {
     height: 75px;
   }
@@ -682,7 +697,7 @@ img {
   margin-top: 0;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .advantages__title {
     text-align: left;
   }
@@ -1170,16 +1185,14 @@ img {
   transition: opacity 500ms var(--primary-transition-timing-function), visibility 500ms var(--primary-transition-timing-function);
   overflow-y: scroll;
 }
-@media screen and (min-width: 768px) {
-  .backdrop {
-    padding: 0;
-  }
-}
 
 .modal {
   position: relative;
   width: 100%;
+  max-width: 450px;
   max-height: 609px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 40px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

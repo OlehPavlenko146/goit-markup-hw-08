@@ -1,5 +1,11 @@
 .buttons-wrap {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .buttons {

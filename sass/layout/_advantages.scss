@@ -7,14 +7,11 @@
   }
 }
 
-// @include desktop {
-//   .advantages__item + .advantages__item {
-//     margin-left: var(--card-gap);
-//   }
-// }
-
 .advantages__item {
   width: 100%;
+  @include tablet {
+    width: 354px;
+  }
   @include desktop {
     width: 270px;
   }
@@ -33,7 +30,7 @@
   margin: 0;
   line-height: 1.71;
   height: 50px;
-  @include desktop {
+  @include tablet {
     height: 75px;
   }
 }
@@ -43,7 +40,7 @@
   color: var(--secondary-text-color);
   margin-top: 0;
   margin-bottom: 10px;
-  @include desktop {
+  @include tablet {
     text-align: left;
   }
 }

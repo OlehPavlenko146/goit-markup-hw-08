@@ -9,15 +9,15 @@
   transition: opacity 500ms var(--primary-transition-timing-function),
     visibility 500ms var(--primary-transition-timing-function);
   overflow-y: scroll;
-  @include tablet {
-    padding: 0;
-  }
 }
 
 .modal {
   position: relative;
   width: 100%;
+  max-width: 450px;
   max-height: 609px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 40px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
